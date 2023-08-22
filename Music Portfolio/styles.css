@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    color: orangered;
+    
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(artist.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding-top: .7rem;
+}
+
+
+.navbar ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 1.4rem;
+
+
+}
+
+.navbar ul li a:hover {
+    color: orangered;
+    transition: 1s;
+}
+
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.left {
+    margin-left: 6%;
+}
+
+.left h1 {
+    font-size: 5rem;
+    color: orangered;
+    /* line-height: 1rem; */
+    /* float: left; */
+}
+
+.right {
+    display: flex;
+    float: right;
+    margin-right: 6%;
+    align-items: center;
+}
+
+.main-play {
+    color: white;
+    margin-right: 1rem;
+    margin-top: -25rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+    .right {
+        margin-top: -14rem;; 
+    }
+    .main-play {
+ 
+     }
+    #play {
+        padding-right: 3rem;
+    }
+ }
+
+
+
+#play {
+    margin-top: -25rem;
+    cursor: pointer;
+}
+
+/* 
+.fa-play {
+    color: orangered;
+    font-size: 2.5rem;
+    margin-top: -25rem;
+}
+ */
+
+ #menu-btn {
+    color: orangered;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+ }
+
+ .hero.active {
+    background-color: black;
+    box-shadow: var(--box-shadow);
+    border: 0;
+}
+
+@media(max-width: 600px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+        z-index: 9;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+        z-index: 9;
+    }
+    .hero .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        /* padding: 3rem 0; */
+        text-align: center;
+        flex-flow: column;
+        /* clip-path enables the menu to hide */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+        z-index: 9;
+        height: 100%;
+     
+    }
+
+    .hero .nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        justify-content: space-around;
+       
+        
+    }
+
+    .hero .nav a {
+        color: orangered;
+        font-size: 1.5rem;
+    } 
+
+    .hero .nav a:hover {
+        color: white;
+        transition: 1s;
+    }
+
+}
+
+
+
+
+ .container {
+    background: black;
+    padding-bottom: 2rem;
+    
+}
+
+.container .heading {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    text-shadow: 0 .5rem 1rem black;
+    color: white;
+}
+
+#music-gallery {
+    background: black;
+}
+
+.container .music-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container .music-container .box {
+    height: 7rem;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem black;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container .music-container .box {
+        height: 7rem;
+        width: 93%;
+        /* flex-flow: column; */
+    }
+}
+
+.container .music-container .box .image {
+    height: 100%;
+    width: 25%;
+}
+
+@media (max-width: 600px) {
+    .container .music-container .image {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+
+.container .music-container .box .image .player-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .music {
+    width: 75%;
+}
+
+
+.container .music-container .box .music audio { 
+    width: 100%;
+    outline: none;
+}
+
+
+/* Store */
+
+#products {
+    background: black;
+    margin-top: -2rem;
+}
+
+#products a {
+    text-decoration: none;
+}
+
+#products .logo {
+    font-size: 2rem;
+    color: orangered;
+    padding-top: 3.5rem;
+    padding-left: 3rem;
+    
+}
+
+h4 {
+    color: black;
+    margin-bottom: .5rem;
+    font-size: 22px;
+}
+ 
+h3 {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    color: orangered;
+}
+
+
+.product-image {
+   height: 14rem;
+   width: 12rem;
+   margin-bottom: 2rem;
+   transform: all 0.2s ;
+}
+
+.all-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -2rem;
+}
+
+.product-price {
+    font-size: 20px;
+}
+
+.product {
+    display: flex;
+    overflow: hidden;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    width: 17rem;
+    height: 26rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 1rem;   
+}
+
+.product:hover img {
+    scale: 1.1;
+}
+
+.product:hover {
+    box-shadow: 5px 15px 25px lightslategray;
+}
+
+.all-products .product .product-btn {
+    padding: 1rem 3rem;
+    background: black;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer; 
+}
+
+.all-products .product .product-btn:hover {
+    padding: 1rem 3rem;
+    background: grey;
+    color: black;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: black;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container .music-logo {
+    color: orangered;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: 1.75rem;
+    
+}
+
+.container .heading {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    text-shadow: 0 .5rem 1rem black;
+    color: white;
+}
+
+.container .music-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 5rem;
+}
+
+.container .music-container .box {
+    height: 7rem;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem black;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container .music-container .box {
+        height: 7rem;
+        width: 93%;
+        /* flex-flow: column; */
+    }
+}
+
+.container .music-container .box .image {
+    height: 100%;
+    width: 25%;
+}
+
+@media (max-width: 600px) {
+    .container .music-container .image {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+
+.container .music-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .music {
+    width: 75%;
+}
+
+
+.container .music-container .box .music audio { 
+    width: 100%;
+    outline: none;
+}
+
+/* .container .music-container .box .music audio::-webkit-media-control-enclosure { 
+    background: none;
+} */

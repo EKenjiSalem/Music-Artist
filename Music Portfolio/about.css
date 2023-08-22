@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about {
+    background: url(microphone.jpg) no-repeat;
+    background-size: 55%;
+    background-color: wheat;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+#about a {
+    text-decoration: none;
+
+}
+
+#about a .logo {
+    margin-left: 2rem;
+    color: orangered;
+    font-size: 2rem;
+    margin-top: -4rem;
+}
+
+@media (max-width: 500px) {
+    #about a .logo {
+     color: orangered;
+     padding-left: 3rem;
+ }
+}
+
+.inner-section {
+    width: 55%;
+    float: right;
+    background-color: orangered;
+    padding: 140px;
+    box-shadow: 12px 12px 8px rgba(0,0,0,0.3);
+    margin-top: 3rem;
+}
+
+.inner-section h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.skills button {
+    font-size: 24px; 
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: black;
+    color: orangered;
+
+}
+
+.skills button:hover {
+    background-color: wheat;
+    color: black;
+
+}
+
+@media (max-width: 120px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 0%;
+    }
+    .inner-section {
+        padding: 60px;
+    }
+    .skills button {
+        padding: 5px;
+        width: 160px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section {
+        width: 100%
+    }
+}

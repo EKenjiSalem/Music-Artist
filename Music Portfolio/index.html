@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Artist Portfolio </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="hero">
+    <div class="navbar">
+      <h1 class="logo"> Music Artist </h1>
+       <ul class="nav">
+        <li><a href="about.html"> About </a></li>
+        <li><a href="music.html"> Music </a></li>
+        <li><a href="store.html"> Store </a></li>
+        <li><a href="events.html"> Events </a></li>
+        <li><a href="contact.html"> Contact </a></li>
+       </ul>
+       <div id="menu-btn" class="fas fa-bars"> </div>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <h1> Bringing <br> Real <br> Music <br> Back </h1>
+      </div>
+      <div class="right"> 
+       <p class="main-play"> Featured Song </p>
+        <!-- Play Button icon by Icons8 -->
+       <img src="plays.png" id="play"> 
+       
+       </div>
+       <!-- <a href="sample.mp3" target="_blank"> Download </a> -->
+    </div>
+  </div>
+
+  <audio id="song">
+    <source src="song.mp3" type="audio/mp3">
+  </audio>
+
+<!-- Music Gallery -->
+  <section id="music-gallery">
+  <div class="container">
+    <div class="heading"> Music Gallery </div>
+     <div class="music-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="artist.jpg" class="player-img" alt="" >
+            </div>
+            <div class="music">
+                <audio src="song.mp3" controls> </audio>
+            </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+              <img src="artist.jpg" class="player-img" alt="" >
+          </div>
+          <div class="music">
+              <audio src="song.mp3" controls> </audio>
+          </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+            <img src="artist.jpg" class="player-img" alt="" >
+        </div>
+        <div class="music">
+            <audio src="song.mp3" controls> </audio>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+          <img src="artist.jpg" class="player-img" alt="" >
+      </div>
+      <div class="music">
+          <audio src="song.mp3" controls> </audio>
+      </div>
+  </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="artist.jpg" class="player-img" alt="" >
+            </div>
+            <div class="music">
+                <audio src="song.mp3" controls> </audio>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="artist.jpg" class="player-img" alt="" >
+            </div>
+            <div class="music">
+                <audio src="song.mp3" controls> </audio>
+            </div>
+        </div>
+     </div>
+</div>
+</section>
+
+<!-- Store
+<section id="products">
+  <h3> Products </h3>
+   <div class="all-products">
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+      <div class="product">
+          <img src="rsz_2tshirt.jpg" class="product-image">
+          <div class="product-info">
+              <h4 class="product-title"> SF T-Shirt </h4>
+              <p class="product-price"> $21.99  </p>
+              <p class="product-btn"> Buy Now </p>
+          </div>
+      </div>
+   </div>
+</section> -->
+
+
+
+
+<script src="script.js"> </script>
+</body>
+
+
